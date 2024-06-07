@@ -1,0 +1,22 @@
+/*Estilos de la tarjeta donde aparece el Pokemon*/
+
+.tarjeta {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-top: 20px;
+    padding: 80px 0px 80px 0px;
+    background-color: white;
+    background-image: url("../IMG/Fondo_pokedex4.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+
+   
+}
+
+
+.tarjeta div {
+    text-align: center;
+
+}
+

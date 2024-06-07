@@ -1,0 +1,54 @@
+/*Estilos del buscador*/
+
+.buscador {
+    margin-top: 20px;
+
+    background-color: #f4ed00;
+  
+}
+
+.formulario {
+    border: 1px solid black;
+    padding: 100px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    background-image: url(../IMG/wallpaper_formulario.png)
+}
+
+.formulario h2 {
+    color:white;
+    text-decoration: underline;
+    text-align: center;
+    
+}
+
+.formulario input {
+    background-image: url(../IMG/botón_pikachu.png);
+
+}
+
+.formulario a {
+    display: block;
+    text-align: center;
+}
+
+
+.formulario a img {
+    height: 50px;
+    
+
+}
+
+.botón_pokemon {
+
+    background-color:#f4ed00;
+    width: 100px;
+    
+}
+
+.formulario p {
+
+    text-align: center;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso simplificado de la API</title>
+ 
+</head>
+<body>
+
+<h1 class="titulo" style="text-align: center; font-family: 'Nunito';">Pokedex</h1>
+
+<p style="text-align: center; font-family: 'Nunito';">Mira la consola del navegador para ver el resultado</p>
+
+<script>
+
+const pokemonContainer = document.getElementById("contenedor");
+
+/* Se crea una variable que contenga al contenedor div en el documento HTML 
+
+querySelector es un método similar a getElementById, pero que puede ser usado para 
+acceder a cualquier elemento del DOM; Como id, class o etiquetas específicas. 
+
+*/
+
+
+//Se crea una función que realizará una única llamada a la API para coger los datos JSON de un pokemon
+
+function fetchPokemon(id) {
+
+//El parámetro id, permite introducir un número que se usara en la jquery para 
+//recuperar los datos de un Pokemon específico. 
+
+    //Se llama al método fetch(), que realia la llamada a la API cuya URL pongamos como argumento. 
+    fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
+
+    //Se usa la template ${id} para que el valor de la búsqueda en la BD Json esté basado en el parámetro 
+    //Que introduce el usuario dentro de la función a la hora de llamarla. 
+
+    .then(res => res.json())//Se pasa el contenido de la promesa (datos del pokemon introducido a formato JSON)
+
+    /*
+
+    Se realiza una llamada al método .then para controlar la promesa que devuelve el método fetch.
+
+    1. Cuando se llama al métod fetch(), se inicia una solicitud HTTP que devuelve una promesa
+    Una promesa es un objeto que representa el resultado de una petición asíncrona (ya bien sea finalización o falla)
+
+    2. response, es el objeto que contiene el resultado de la promesa, se llama al método json() para cambiar el contenido 
+    de la promesa a formato JSON
+
+    3. Luego, se realizarán múltiples llamadas al método .then para trabajar con el contenido de la consulta de
+    diferentes formas.
+    */
+
+
+    .then(data => console.log(data)); //Se muestran en consola los datos de la consulta en formato JSON. 
+
+
+
+
+}
+
+alert("Se te va a pedir que introduzcas el número del Pokemon del que quieres buscar la información")
+
+let num = parseInt(prompt("Introduce el número: "));//Se pide el número específico de un Pokemon
+
+fetchPokemon(num); //Se hace una llamada a la función con el número específico del Pokemon
+
+</script>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+/*Estilos del navegador de la página*/
+
+.navegador {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #7dc2eb;
+    
+
+
+}
+
+nav a {
+    padding: 10px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: white
+
+
+}
+
+nav a img {
+    height: 30px;
+}
+
+nav div {
+
+    padding: 10px 5px 10px 5px;
+    display: flex;
+    margin-right: 10px;
+    color:white
+
+
+}
+
+nav div
+
+nav a:hover {
+
+    font-weight: bolder
+}
+
+
+@media (width < 500px) {
+    
+    nav div a {
+        font-size: xx-small;
+    }
+}

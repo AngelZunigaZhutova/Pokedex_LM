@@ -1,0 +1,19 @@
+/*Estilos globales de todo el documento*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body {
+    box-sizing: border-box;
+    background-color: tomato;
+}
+
+* {
+    font-family: 'Nunito';
+}
+
+
+/*Propiedad shorthand: top | right | bottom | left */

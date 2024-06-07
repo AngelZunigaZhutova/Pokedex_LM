@@ -1,0 +1,14 @@
+/*Elementos del main*/
+
+.main {
+    padding: 200px 0px 200px 0px;
+    background-image: url("../IMG/Fondo_pag.jpg");
+    background-size: cover;
+
+}
+
+@media (width > 900px) {
+    .main {
+        background-image: url("../IMG/Fondo_Tarjeta.jpg");
+    }
+}
